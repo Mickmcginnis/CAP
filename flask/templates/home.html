@@ -1,0 +1,42 @@
+{% extends 'base2.html' %}
+{% block page %}
+<div class="container-fluid bg-dark">
+  <div class="align-middle">
+    <div id="demo" class="carousel slide" data-ride="carousel">
+
+      <!-- Indicators -->
+      <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+      </ul>
+
+      <!-- The slideshow -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="{{ url_for('static', filename='images/politico_house_losses_11_27_20.jpg') }}" alt="Los Angeles" height="600px" class="d-md-flex d-block mx-md-auto mx-0">
+          <div class="carousel-caption"> </div>
+          <div class="float-left carousel-caption block-4">
+            <h3>Upcoming vote on cannabis</h3>
+            <p class="text-block">The House will vote on the legalization of marijuana in December</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="align-middle">
+            <img src="{{ url_for('static', filename='images/dome.jpg') }}" alt="Congress" height="600" class="d-md-flex d-block mx-md-auto mx-0">
+          </div>
+        </div>
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+
+    </div>
+  </div>
+</div>
+{% endblock %}

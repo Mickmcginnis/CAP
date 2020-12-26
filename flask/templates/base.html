@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+  <head>
+    <title>Congressional Accountability</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,700|Muli:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='fonts/icomoon/style.css') }}">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/jquery-ui.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.theme.default.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.theme.default.min.css') }}">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/jquery.fancybox.min.css') }}">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap-datepicker.css') }}">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='fonts/flaticon/font/flaticon.css') }}">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/aos.css') }}">
+    <link href="{{ url_for('static', filename='css/jquery.mb.YTPlayer.min.css') }}" media="all" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  </head>
+  <style>
+    header {
+      width: 100%;
+      height: 45vh;
+      background: whitesmoke;
+      background-size: cover;
+    }
+
+    .content {
+          width: 94%;
+          margin: 4em auto;
+          font-size: 25px;
+          line-height: 30px;
+          text-align: justify;
+    }
+
+    nav {
+          position: static;
+          width: 100%;
+          height: 40px;
+          line-height: 40px;
+    }
+
+    nav ul {
+          height: 75px;
+          line-height: 40px;
+          list-style: none;
+          background: rgba(80, 80, 80, 70);
+          overflow: scroll;
+          color: #fff;
+          padding: 0;
+          text-align: center;
+          margin: 0;
+          padding-right: 40px;
+          transition: 1s;
+    }
+
+    .logo {
+          line-height: 20px;
+          position: static;
+          float: left;
+          margin: 16px 46px;
+          color: #fff;
+          font-weight: bold;
+          font-size: 20px;
+          letter-spacing: 2px;
+    } 
+
+    nav.black ul {
+          background: #000;
+    }
+
+    nav ul li {
+          display: inline-block;
+          padding: 16px 40px;;
+    }
+
+    nav ul li a {
+          text-decoration: none;
+          color: #fff;
+          font-size: 20px;
+    }
+
+    .menu-icon {
+          line-height: 40px;
+          width: 100%;
+          background: #000;
+          text-align: right;
+          box-sizing: border-box;
+          padding: 15px 24px;
+          cursor: pointer;
+          color: #fff;
+          display: none;
+    }
+
+    @media(max-width: 786px) {
+
+
+          nav ul {
+                max-height: 0px;
+                background: #000;
+          }
+
+          nav.black ul {
+                background: #000;
+          }
+
+          .showing {
+                max-height: 400em;
+          }
+
+          nav ul li {
+                box-sizing: border-box;
+                width: 100%;
+                padding: 24px;
+                text-align: center;
+          }
+
+          .menu-icon {
+                display: block;
+          }
+
+    }
+  </style>
+
+  <body>
+    <div class="wrapper">
+        <header>
+          <nav>
+              <div class="menu-icon">
+                <i class="fa fa-bars fa-2x"></i>
+              </div>
+              <div class="menu">
+                  <img src="{{ url_for('static', filename='images/congress.png') }}" alt="Image" class="img d-inline-flex" width="20%">
+                  <h1 class="d-inline-flex"> Congressional Accountability Project </h1>
+                  <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">House</a></li>
+                        <li><a href="#">About</a></li>
+                  </ul>
+              </div>
+          </nav>
+        </header>
+    
+      <!-- Menu, need to change -->
+      <body>
+            <div class="py-4">
+                  {% block page %}{% endblock %}
+            </div>
+      </body>
+
+      <!-- FOOTER -->
+      <div class="footer">
+          <div class="container">
+              <div class="row">
+              <div class="col-5 md-3">
+                  <p class="mb-4"></p>
+              </div>
+              <div class="col-lg-3">
+                  <p>Zoë McGinnis</p>
+                  <p>S. C. "Mack" McAnaney</p>
+                  <p>Laurel Rodriguez Mitton</p>  
+              </div>
+          </div>
+      </div>
+      
+      <!-- loader -->
+      <div id="loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#ff5e15"/></svg></div>
+      
+      <script src="{{ url_for('static', filename='js/jquery-3.3.1.min.js') }}"></script>
+      <script src="{{ url_for('static', filename='js/jquery-migrate-3.0.1.min.js') }}"></script>
+      <script src="{{ url_for('static', filename='js/jquery-ui.js') }}"></script>
+      <script src="{{ url_for('static', filename='js/popper.min.js') }}"></script>
+      <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+      <script src="{{ url_for('static', filename='js/owl.carousel.min.js') }}"></script>
+      <script src="{{ url_for('static', filename='js/jquery.stellar.min.js') }}"></script>
+      <script src="{{ url_for('static', filename='js/jquery.countdown.min.js') }}"></script>
+      <script src="{{ url_for('static', filename='js/bootstrap-datepicker.min.js') }}"></script>
+      <script src="{{ url_for('static', filename='js/jquery.easing.1.3.js') }}"></script>
+      <script src="{{ url_for('static', filename='js/aos.js') }}"></script>
+      <script src="{{ url_for('static', filename='js/jquery.fancybox.min.js') }}"></script>
+      <script src="{{ url_for('static', filename='js/jquery.sticky.js') }}"></script>
+      <script src="{{ url_for('static', filename='js/jquery.mb.YTPlayer.min.js') }}"></script>
+
+      <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    </div>
+  </body>
+</html>

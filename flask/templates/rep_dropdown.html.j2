@@ -1,0 +1,20 @@
+{% macro reps(reps_list, reps_urls) %}
+<div>
+    <select class="custom-select" type="button" onChange="onRepSelected(this);">
+        <option value="">Representative</option>
+        {% for rep_index in range(reps_list|length) %}
+            <option value="/house/{{ reps_urls[rep_index] }}">{{ reps_list[rep_index] }}
+            </option>
+        {% endfor %}
+    </select>
+</div>
+<script>
+    function onRepSelected(selval) {
+        var value = selval.options[selval.selectedIndex].value;
+        window.location.href=value;
+    }
+</script>
+{% endmacro %}
+
+{% import 'rep_dropdown.html.j2' as rdd %}
+{{ rdd.reps(reps_list, reps_urls) }}

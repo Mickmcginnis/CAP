@@ -1,0 +1,30 @@
+{% extends 'base2.html' %}
+{% block page %}
+<div class="container px-5">
+    <h2 style="font-size: 35;">About The Project</h5>
+    <p style="font-size: 20;">
+        The Congressional Accountability Project was created by Z. McGinnis, M. McAneney, and L. Rodriguez Mitton as a resource to directly link Congresspeople to their donors and voting records. We found that our fellow college students want to see their representatives’ actual voting history, not just their campaign promises. This website consolidates information from various official sources and presents it in one convenient place for easy reference. Our goal is to keep this information as open and clear as possible, to promote representative accountability and to inform voters on their representatives’ actions as opposed to their promises.
+    </p>
+    <h2 style="font-size: 35;">Data Sources</h2>
+    <li>
+        <ul><strong>ProPublica Congress API</strong><br>
+            The <a href="https://projects.propublica.org/api-docs/congress-api/">ProPublica Congress API</a> 
+            is an open-source repository with up-to-date information on Congress. It includes biographical 
+            and general member data, information about bills and votes, individual member and group statement 
+            data, and committee data. The repository is maintained by volunteers and updated at least daily.
+            Information on this website sourced from the ProPublica Congress API includes the names, party
+            affiliation, state, district, committee, and recent votes data on Representatives' pages.
+        </ul>
+        <ul>
+            <strong>FollowTheMoney.org</strong><br>
+            <a href="https://www.followthemoney.org/">FollowTheMoney.org</a> provides individual campaign 
+            funding data through their Ask Us Anything API.
+        </ul>
+    </li>
+    <h2>Feedback</h2>
+    <p>
+        Notice something wrong? Want to suggest a change? Use <a href="https://forms.gle/p8YpcvwoSvt6aSecA">this form</a> 
+        to contact us!
+    </p>
+</div>
+{% endblock %}

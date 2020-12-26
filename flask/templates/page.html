@@ -1,0 +1,23 @@
+{% extends 'base2.html' %}
+{% block page %}
+<div class="d-md-flex d-block mx-md-auto mx-0 col-6">
+    <div>
+        <div class="d-inline-block">
+            <h3>{{ first_name }} {{ last_name }}</h3>
+            <h4 class="h12">{{ party }} - {{ state }}, District {{ district }}</h4>
+            <a href="{{ gov_url }}"></a>
+            <div class="col-6">
+            </div>
+            <h4 class="h12 p-1">Committees</h4>
+            <p class="h13">Filler</p>
+            <h4 class="h12 p-1">Recent Votes</h4>
+            <p>Filler</p>
+            <h4 style="font-size: 24;" class="p-1">Top Donors</h4>
+            <p>Filler</p>    
+        </div>
+        <div class="d-inline-block">
+            <img src="">
+        </div>
+    </div>
+</div>
+{% endblock %}

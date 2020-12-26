@@ -1,0 +1,14 @@
+{% extends 'base2.html' %}
+{% block page %}
+<div class="row">
+    <div class="container">
+        {% for t in reps_urls %}
+        <li>
+            <ul><a href="/house/{{ t }}">{{ t|replace('+', ' ') }}</a><br></ul>
+        </li>
+        {% endfor %}
+    </div>
+</div>
+<div>
+</div>
+{% endblock %}
